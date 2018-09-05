@@ -39,11 +39,8 @@ public class PcReceiver {
     public Client connect() {
         log.info("zhuzhibin ======connect======");
         try {
-            log.info("zhuzhibin ======try======");
             Client client = new Client(this);
-            log.info("zhuzhibin ======try11======");
             client.s = ss.accept();
-            log.info("zhuzhibin ======try22======");
             client.dis = new DataInputStream(client.s.getInputStream());
             client.dos = new DataOutputStream(client.s.getOutputStream());
             log.info("zhuzhibin client:"+client.toString());
@@ -51,7 +48,6 @@ public class PcReceiver {
         } catch (IOException e) {
             log.info("zhuzhibin ======IOException======");
             e.printStackTrace();
-            log.info("zhuzhibin ======IOException11======");
             return null;
         }
     }

@@ -12,11 +12,18 @@
         android:hint="请输入你要发送的信息" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/msg_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/EditText1"
         android:layout_centerHorizontal="true"
-        android:text="发送" />
+        android:text="发送消息" />
+    <Button
+        android:id="@+id/file_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg_btn"
+        android:layout_centerHorizontal="true"
+        android:text="发送文件" />
 
 </RelativeLayout>
